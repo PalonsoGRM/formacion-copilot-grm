@@ -1,0 +1,27 @@
+<form (ngSubmit)="onSubmit()">
+  <div>
+    <label for="title">Título</label>
+    <input id="title" [(ngModel)]="task.title" name="title" type="text" placeholder="Título de la tarea" />
+  </div>
+
+  <div>
+    <label for="description">Descripción</label>
+    <textarea id="description" [(ngModel)]="task.description" name="description" rows="3"></textarea>
+  </div>
+
+  <div>
+    <label for="status">Estado</label>
+    <select id="status" [(ngModel)]="task.status" name="status">
+      <option value="todo">Pendiente</option>
+      <option value="in-progress">En curso</option>
+      <option value="done">Hecho</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="projectId">Proyecto</label>
+    <input id="projectId" [(ngModel)]="task.projectId" name="projectId" type="number" />
+  </div>
+
+  <button type="submit">Crear tarea</button>
+</form>

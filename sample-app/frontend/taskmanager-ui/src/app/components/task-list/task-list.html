@@ -1,0 +1,30 @@
+<div class="task-list">
+  <h2>Tareas</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Título</th>
+        <th>Estado</th>
+        <th>Proyecto</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (task of tasks; track task.id) {
+        <tr>
+          <td>{{ task.title }}</td>
+          <td>
+            <span class="status status-{{ task.status }}">
+              {{ getStatusLabel(task.status) }}
+            </span>
+          </td>
+          <td>{{ task.projectId }}</td>
+          <td>
+            <button (click)="deleteTask(task.id)">Eliminar</button>
+          </td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>

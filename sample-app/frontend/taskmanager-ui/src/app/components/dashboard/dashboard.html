@@ -1,0 +1,88 @@
+<div class="dashboard">
+
+  <!-- Header -->
+  <div class="dashboard-header">
+    <h1>Task Manager Dashboard</h1>
+    <div class="header-actions">
+      <button class="btn btn-primary" (click)="addTask()">+ Add Task</button>
+      <!-- BUG #3: calls loadData() instead of fetchData() — Refresh does nothing -->
+      <button class="btn btn-secondary" (click)="loadData()">&#8635; Refresh</button>
+    </div>
+  </div>
+
+  <!-- Stats bar -->
+  <div class="stats-bar">
+    <div class="stat-card">
+      <span class="stat-value">{{ stats.total }}</span>
+      <span class="stat-label">Total Tasks</span>
+    </div>
+    <div class="stat-card highlight">
+      <span class="stat-value">{{ stats.open }}</span>
+      <span class="stat-label">Open Tasks</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-value">{{ stats.projects }}</span>
+      <span class="stat-label">Projects</span>
+    </div>
+  </div>
+
+  <div class="tables-grid">
+
+    <!-- Tasks Table -->
+    <div class="table-section">
+      <div class="table-header">
+        <h2>Tasks</h2>
+      </div>
+      <div *ngIf="isLoading" class="loading">Loading tasks...</div>
+      <table *ngIf="!isLoading" class="data-table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Status</th>
+            <th>Due Date</th>
+            <th>Project ID</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let task of tasks">
+            <td>{{ task.title }}</td>
+            <td>
+              <span class="badge" [ngClass]="task.status?.toLowerCase()">
+                {{ task.status }}
+              </span>
+            </td>
+            <td>{{ task.dueDate ?? '—' }}</td>
+            <td>{{ task.projectId }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Projects Table -->
+    <div class="table-section">
+      <div class="table-header">
+        <h2>Projects</h2>
+        <button class="btn btn-outline" (click)="newProject()">+ New Project</button>
+      </div>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Tasks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- BUG #2 (visible): iterates 'projectList' — correct, table shows data -->
+          <!-- NOTE: stats.open hardcoded bug is in .ts, reflected in stat card -->
+          <tr *ngFor="let project of projectList">
+            <td>{{ project.name }}</td>
+            <td>{{ project.description }}</td>
+            <td>{{ project.tasks?.length ?? 0 }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>

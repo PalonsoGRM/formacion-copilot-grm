@@ -1,26 +1,22 @@
-# FormacionIA — Formación de un día: IA para desarrolladores .NET y Angular
+# FormacionIA — Sesión Formativa IA
 
-> Aprende a programar más rápido, con mejor documentación y código más seguro usando GitHub Copilot, OpenCode y SpecKit.
+> **Fechas**: 23 y 25 de marzo 2026 · **Horario**: 08:30 – 14:00
 
 ---
 
-## Agenda del día
+## Agenda
 
-| Hora | Bloque | Herramienta |
+| Hora | Bloque | Responsable |
 |---|---|---|
-| 09:00–09:30 | Intro: ¿Por qué IA en tu workflow? Anatomía del prompt perfecto | GitHub Copilot |
-| 09:30–10:15 | **Lab 1 — Ask mode**: explorar y entender código con `@workspace`, `#file`, `/explain` | Copilot Ask |
-| 10:15–10:30 | Descanso | |
-| 10:30–11:15 | **Lab 2 — Edit mode**: refactor multi-archivo controlado | Copilot Edit |
-| 11:15–12:00 | **Lab 3 — Agent mode**: añadir una feature completa desde cero | Copilot Agent |
-| 12:00–13:00 | Comida | |
-| 13:00–13:30 | **Demo — Plan mode**: diseña antes de codear | Copilot Plan |
-| 13:30–14:30 | **Lab 4 — OpenCode**: agente IA en la terminal, Plan→Build, custom agents | OpenCode |
-| 14:30–15:00 | **Demo — SpecKit**: desarrollo dirigido por especificaciones | SpecKit + Copilot |
-| 15:00–15:15 | Descanso | |
-| 15:15–15:45 | **Demo — Documentación**: `AGENTS.md`, plantillas `.md` con placeholders, XML docs | Copilot |
-| 15:45–16:30 | **Demo — Código seguro**: code review de seguridad, license awareness | Copilot |
-| 16:30–17:00 | Cierre, cheatsheet de prompts, Q&A | |
+| 08:30 – 08:45 | Apertura y bienvenida | |
+| 08:45 – 08:55 | **Introducción** (10 min): "La IA nos ha hecho JAQUE" — impacto, estadísticas de uso | Todos |
+| 08:55 – 09:15 | **Fundamentos de IA** (20 min): LLM, Tokens, Context Window, modelos en Copilot Empresarial | Derek |
+| 09:15 – 10:10 | **GitHub Copilot en el IDE** (45 min): herramienta, funcionalidades básicas, modos Ask/Plan/Agent | Todos |
+| 10:10 – 10:40 | ☕ Descanso (30 min) | |
+| 10:40 – 11:40 | **Workshop práctico** (60 min): ejercicio completo con los tres modos sobre app con fallos intencionados | Pablo |
+| 11:40 – 12:25 | **Fundamentos Avanzados** (45 min): Custom Agents, ficheros `.md`, SpecKit / OpenSpec | |
+| 12:25 – 13:25 | **Mejoras para el Developer** (60 min): nueva tabla tradicional vs IA, generación de tests, comparativa tiempos | Jero / Edu |
+| 13:25 – 14:00 | **Foro abierto** — Preguntas y respuestas | Todos |
 
 ---
 
@@ -31,15 +27,16 @@ FormacionIA/
 ├── README.md                    # Este archivo
 ├── PREREQUISITES.md             # Guía de instalación y configuración previa
 ├── resources.md                 # Links, herramientas, lectura recomendada
-├── slides/                      # Diapositivas en Markdown (una por bloque)
+├── schedule.txt                 # Guion detallado de la sesión
 ├── sample-app/
-│   ├── backend/                 # ASP.NET Core Web API — Task Manager
+│   ├── backend/                 # ASP.NET Core Web API — Task Manager (con defectos intencionados)
 │   └── frontend/                # Angular app — Task Manager UI
-├── labs/
-│   ├── 01-ask-mode/             # Instrucciones y prompts del Lab 1
-│   ├── 02-edit-mode/            # Instrucciones y prompts del Lab 2
-│   ├── 03-agent-mode/           # Instrucciones y prompts del Lab 3
-│   └── 04-opencode/             # Script de demo y lab de OpenCode
+├── workshop-1h/                 # 🆕 Workshop práctico (bloque de Pablo — 60 min)
+│   ├── README.md                # Agenda y setup del workshop
+│   ├── slides/                  # Diapositivas: novedades de Copilot
+│   ├── labs/                    # Labs de Ask, Plan y Agent mode
+│   ├── cheatsheet.md            # Referencia rápida para llevarse a casa
+│   └── trainer-notes.md        # Guion del formador
 ├── docs-templates/              # Plantillas de documentación con IA
 │   ├── AGENTS.md                # Instrucciones Copilot a nivel de repositorio
 │   ├── FEATURE_SPEC.md          # Plantilla de especificación con placeholders

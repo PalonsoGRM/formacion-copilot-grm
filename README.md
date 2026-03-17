@@ -31,22 +31,31 @@ FormacionIA/
 ├── PREREQUISITES.md             # Guía de instalación y configuración previa
 ├── resources.md                 # Links, herramientas, lectura recomendada
 ├── schedule.txt                 # Guion detallado de la sesión
+├── .github/                     # Configuración de GitHub Copilot y automatización
+│   ├── copilot-instructions.md  # Instrucciones globales de Copilot para este repo
+│   ├── pull_request_template.md # Plantilla de PR lista para usar
+│   ├── agents/                  # 🤖 Agentes personalizados (Lab 06)
+│   │   ├── revisor.agent.md     # Revisor de código con estándares del equipo
+│   │   ├── planificador.agent.md# Planificador de features con handoffs
+│   │   └── tester.agent.md      # Especialista en tests xUnit + Moq
+│   └── prompts/                 # 💬 Prompt files / slash commands (Lab 06)
+│       └── nuevo-endpoint.prompt.md # /nuevo-endpoint — scaffold de endpoint
 ├── sample-app/
 │   ├── backend/                 # ASP.NET Core Web API — Task Manager (con defectos intencionados)
 │   └── frontend/                # Angular app — Task Manager UI
-├── workshop-1h/                 # 🆕 Workshop práctico (bloque de Pablo — 60 min)
-│   ├── README.md                # Agenda y setup del workshop
-│   ├── slides/                  # Diapositivas: novedades de Copilot
-│   ├── labs/                    # Labs de Ask, Plan y Agent mode
-│   ├── cheatsheet.md            # Referencia rápida para llevarse a casa
-│   └── trainer-notes.md        # Guion del formador
-├── docs-templates/              # Plantillas de documentación con IA
-│   ├── AGENTS.md                # Instrucciones Copilot a nivel de repositorio
-│   ├── FEATURE_SPEC.md          # Plantilla de especificación con placeholders
-│   └── .github/
-│       └── pull_request_template.md
-└── speckit-demo/
-    └── README.md                # Walkthrough completo del flujo SpecKit
+└── workshop-1h/                 # Workshop práctico (bloque de Pablo — ~1h 15min)
+    ├── README.md                # Agenda y setup del workshop
+    ├── cheatsheet.md            # Referencia rápida para llevarse a casa
+    ├── trainer-notes.md         # Guion del formador
+    ├── slides/
+    │   └── 00-novedades.md      # Diapositivas: novedades de Copilot
+    └── labs/
+        ├── 01-ask-actualizado/  # Lab 1: Ask con #codebase, #file, selección
+        ├── 02-plan-mode/        # Lab 2: Plan mode GA
+        ├── 03-agent-build/      # Lab 3: Agent construye endpoint desde cero
+        ├── 04-frontend/         # Lab 4: Angular — bugs + feature nueva
+        ├── 05-copilot-instructions/ # ⭐ Extra: copilot-instructions.md + poder del .github
+        └── 06-custom-agents/    # ⭐ Extra: agentes y prompt files personalizados
 ```
 
 ---

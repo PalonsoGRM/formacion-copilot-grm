@@ -49,7 +49,7 @@ El repositorio ya incluye una plantilla en `docs-templates/.github/prompts/`. Ac
 ```powershell
 $dest = "sample-app\backend\TaskManager.Api\.github\prompts"
 New-Item -ItemType Directory -Force $dest | Out-Null
-Copy-Item docs-templates\.github\prompts\nuevo-endpoint.prompt.md $dest -Force
+Copy-Item .github\prompts\nuevo-endpoint.prompt.md $dest -Force
 ```
 
 Ahora pruébalo en el chat:
@@ -121,10 +121,12 @@ O desde la paleta de comandos: `Ctrl+Shift+P` → *Preferences: Open Settings (J
 
 ### Activar los agentes de ejemplo
 
+Los agentes ya están en este repositorio, en `.github/agents/`. Para usarlos en el proyecto **sample-app**, cópialos:
+
 ```powershell
 $dest = "sample-app\backend\TaskManager.Api\.github\agents"
 New-Item -ItemType Directory -Force $dest | Out-Null
-Copy-Item docs-templates\.github\agents\* $dest -Force
+Copy-Item .github\agents\* $dest -Force
 ```
 
 Reinicia VS Code (o usa `Developer: Reload Window`) para que detecte los nuevos agentes.

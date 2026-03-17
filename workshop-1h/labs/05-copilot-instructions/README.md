@@ -39,7 +39,7 @@ Observa la respuesta. Probablemente Copilot:
 
 ## Ejercicio 1 — Crear `copilot-instructions.md` (5 min)
 
-El repositorio ya incluye una plantilla preparada en `docs-templates/.github/`.
+El repositorio ya incluye una plantilla preparada en `.github/`.
 
 ### Paso 1: Copia la plantilla al proyecto
 
@@ -47,7 +47,7 @@ El repositorio ya incluye una plantilla preparada en `docs-templates/.github/`.
 # Desde la raíz del repositorio
 $dest = "sample-app\backend\TaskManager.Api\.github"
 New-Item -ItemType Directory -Force -Path $dest | Out-Null
-Copy-Item docs-templates\.github\copilot-instructions.md $dest\copilot-instructions.md -Force
+Copy-Item .github\copilot-instructions.md $dest\copilot-instructions.md -Force
 ```
 
 ### Paso 2: Lee el archivo (2 min)
@@ -179,10 +179,10 @@ La carpeta `.github` no es solo para Copilot. Es el **panel de control de tu rep
 
 ### PR Template — tienes uno listo
 
-El repositorio ya incluye una plantilla en `docs-templates/.github/pull_request_template.md`. Para activarla en el proyecto:
+El repositorio ya incluye una plantilla en `.github/pull_request_template.md`. Para activarla en el proyecto:
 
 ```powershell
-Copy-Item docs-templates\.github\pull_request_template.md `
+Copy-Item .github\pull_request_template.md `
   sample-app\backend\TaskManager.Api\.github\pull_request_template.md -Force
 ```
 

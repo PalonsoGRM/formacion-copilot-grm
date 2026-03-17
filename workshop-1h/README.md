@@ -38,6 +38,7 @@ Si la sesión termina antes o se hace en formato extendido, hay contenido adicio
 | Lab | Duración | Actividad | Material |
 |-----|----------|-----------|----------|
 | Lab 5 | 20–60 min | Copilot Instructions y el poder del `.github` | [labs/05-copilot-instructions/README.md](labs/05-copilot-instructions/README.md) |
+| Lab 6 | 30–90 min | Custom agents y prompt files — crea tus propios especialistas | [labs/06-custom-agents/README.md](labs/06-custom-agents/README.md) |
 
 ---
 
@@ -51,6 +52,7 @@ Si la sesión termina antes o se hace en formato extendido, hay contenido adicio
 | [labs/03-agent-build/README.md](labs/03-agent-build/README.md) | Lab 3: Agent construye un endpoint nuevo desde cero |
 | [labs/04-frontend/README.md](labs/04-frontend/README.md) | Lab 4: Angular — bugs + feature nueva con Ask y Agent |
 | [labs/05-copilot-instructions/README.md](labs/05-copilot-instructions/README.md) | Lab 5 *(extra)*: Copilot Instructions y el poder del `.github` |
+| [labs/06-custom-agents/README.md](labs/06-custom-agents/README.md) | Lab 6 *(extra)*: Custom agents y prompt files — crea tus propios especialistas |
 | [cheatsheet.md](cheatsheet.md) | Referencia rápida: árbol de decisión, variables, comandos |
 | [trainer-notes.md](trainer-notes.md) | Guion minuto a minuto para el formador |
 
@@ -123,7 +125,9 @@ workshop-1h/
     │   └── README.md
     ├── 04-frontend/
     │   └── README.md
-    └── 05-copilot-instructions/ ← lab extra
+    ├── 05-copilot-instructions/ ← lab extra
+    │   └── README.md
+    └── 06-custom-agents/        ← lab extra
         └── README.md
 ```
 

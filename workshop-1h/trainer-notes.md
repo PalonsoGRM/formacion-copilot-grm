@@ -20,6 +20,7 @@
 | Lab | Duración | Tema |
 |-----|----------|------|
 | Lab 5 | 20–60 min | Copilot Instructions & poder del `.github` |
+| Lab 6 | 30–90 min | Custom agents y prompt files |
 
 ---
 
@@ -459,3 +460,51 @@ Añade el Ejercicio 3 (instrucciones path-specific, 10 min) y profundiza en cada
 #### Cierre del Lab 5
 
 > "Un solo archivo, commiteado en el repo, que hace que Copilot conozca vuestros estándares, que los PRs tengan siempre la misma estructura, y que los revisores correctos sean asignados automáticamente. El `.github` no es burocracia — es la memoria de vuestro equipo."
+
+---
+
+### Lab 6 — Custom Agents & Prompt Files
+
+**Material**: `labs/06-custom-agents/README.md`  
+**Duración**: 30 min (agentes + prompt files) · hasta 90 min (con extensión TypeScript)
+
+#### Gancho de apertura
+
+> "El Lab 5 le enseñó a Copilot vuestros estándares. El Lab 6 va un paso más allá: vais a crear vuestros propios agentes especializados. Un revisor de código que conoce exactamente vuestras reglas. Un planificador que analiza el impacto antes de tocar código. Un especialista en tests que siempre usa xUnit y Moq. Nada de código TypeScript — solo archivos Markdown."
+
+#### Estructura del lab (versión 30 min)
+
+| Parte | Min | Qué hace el formador |
+|-------|-----|----------------------|
+| Nivel 1: Prompt files | 10 | Demo de `/nuevo-endpoint` — activa la plantilla, prueba en vivo |
+| Nivel 2: 3 agentes | 15 | Activa los agentes, demuestra `revisor` → handoff → `copilot` |
+| Encadenamiento | 5 | Muestra el flujo completo: `planificador` → `revisor` → `copilot` |
+
+#### Puntos clave para enfatizar
+
+- **Sin código**: todo son archivos `.md` en `.github/agents/` y `.github/prompts/`
+- **Handoffs**: el contexto pasa automáticamente entre agentes — el desarrollador solo aprueba cada paso
+- **Herramientas**: puedes restringir qué puede hacer cada agente (leer/escribir/ejecutar)
+- **Portable**: se comparte con todo el equipo via git, como cualquier otro archivo
+
+#### Demo estrella: el flujo completo
+
+Muestra este flujo en pantalla completa:
+
+```
+1. [planificador] "Añadir campo Priority a las tareas"
+2. → Lee el plan → pulsa "Implementar"
+3. [copilot] Implementa → builds OK
+4. [tester] "Tests para los cambios de Priority"
+5. → Tests generados con naming correcto y casos completos
+```
+
+Total: ~5 minutos de trabajo real. "En un equipo sin Copilot, esto son 2 horas."
+
+#### Actividad para los participantes (10 min al final)
+
+> "Tenéis 10 minutos para diseñar vuestro propio agente usando el template del lab. Pensad en un problema real de vuestro equipo — un tipo de revisión que siempre hacéis, una tarea repetitiva, un check que os olvidáis... Escribidlo. Al final, quien quiera lo comparte."
+
+#### Cierre del Lab 6
+
+> "Los custom agents son la diferencia entre 'Copilot que genera código genérico' y 'Copilot que trabaja exactamente como trabaja vuestro equipo'. No requieren código, no requieren despliegue. Solo un archivo Markdown en `.github/agents/` — y todo el equipo tiene el mismo especialista disponible desde el primer `git pull`."

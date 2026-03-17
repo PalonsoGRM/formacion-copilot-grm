@@ -1,6 +1,9 @@
 # FormacionIA — Sesión Formativa IA
 
-> **Fechas**: 23 y 25 de marzo 2026 · **Horario**: 08:30 – 14:00
+<img width="546" height="268" alt="ROMEU" src="https://github.com/user-attachments/assets/9e734aa8-0dc3-47e7-8e26-87a50e099e2b" />
+
+
+**Fechas**: 23 y 25 de marzo 2026 · **Horario**: 08:30 – 14:00
 
 ---
 

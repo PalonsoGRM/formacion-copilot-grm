@@ -1,7 +1,7 @@
-# AGENTS.md — TaskManager API
+# Copilot Instructions — TaskManager API
 
-> Este archivo es leído por GitHub Copilot, OpenCode y otros agentes IA.
-> Commiteado en el repositorio para que todo el equipo se beneficie del mismo contexto.
+> Este archivo es leído por GitHub Copilot para proporcionar contexto del proyecto a todos los participantes.
+> Cópialo a `.github/copilot-instructions.md` en tu repositorio para que Copilot lo use automáticamente.
 
 ## Descripción del proyecto
 
@@ -76,7 +76,7 @@ User     { Id, Name, Email, AssignedTasks }
 - Sin autenticación en endpoints destructivos (DELETE, PUT)
 - CORS permisivo (`AllowAnyOrigin`) — no apto para producción
 
-## Reglas para los agentes IA
+## Reglas para Copilot
 
 - **No instales paquetes NuGet** sin preguntar al desarrollador
 - **No cambies la interfaz de los endpoints** existentes sin confirmar

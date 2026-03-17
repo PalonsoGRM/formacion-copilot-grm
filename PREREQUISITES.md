@@ -30,7 +30,7 @@ winget install Microsoft.DotNet.SDK.8
 
 ---
 
-## 3. Node.js 20 LTS (necesario para OpenCode y Angular)
+## 3. Node.js 20 LTS (necesario para Angular)
 
 ```powershell
 node --version
@@ -62,39 +62,45 @@ npm install -g @angular/cli
 
 ---
 
-## 5. OpenCode
+## 5. GitHub Copilot CLI
 
-OpenCode es un agente IA que vive en tu terminal, independiente del IDE.
+GitHub Copilot CLI es una extensión de la GitHub CLI (`gh`) que te permite usar Copilot directamente desde la terminal para sugerir y explicar comandos de shell.
 
-### Opción A — npm (recomendado si tienes Node.js)
-
-```powershell
-npm install -g opencode-ai
-opencode --version
-```
-
-### Opción B — Scoop (gestor de paquetes para Windows)
+### 5.1 GitHub CLI (`gh`)
 
 ```powershell
-# Instalar Scoop si no lo tienes
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
-
-# Instalar OpenCode
-scoop install opencode
-opencode --version
+gh --version
+# Debe mostrar gh version 2.x.x o superior
 ```
 
-### Configurar el modelo en OpenCode
-
-La primera vez que ejecutes `opencode` en un proyecto, te pedirá un proveedor de modelos. Para la formación usaremos el modelo que ya tenéis disponible a través de GitHub Copilot:
+Si no está instalado:
 
 ```powershell
-cd C:\Users\<tu-usuario>\source\repos\FormacionIA\sample-app\backend
-opencode
+winget install GitHub.cli
 ```
 
-En la primera pantalla selecciona **GitHub Copilot** como proveedor.
+Autentica con tu cuenta corporativa:
+
+```powershell
+gh auth login
+```
+
+### 5.2 Extensión Copilot CLI
+
+```powershell
+gh extension install github/gh-copilot
+gh copilot --version
+```
+
+### Comandos principales
+
+```powershell
+# Sugerir un comando de shell
+gh copilot suggest "listar archivos modificados en los últimos 7 días"
+
+# Explicar un comando
+gh copilot explain "git rebase -i HEAD~3"
+```
 
 ---
 
@@ -167,7 +173,7 @@ Write-Host "--- Verificacion FormacionIA ---"
 dotnet --version
 node --version
 ng version --skip-git 2>$null | Select-String "Angular CLI"
-opencode --version
+gh copilot --version
 python --version
 uv --version
 specify --version

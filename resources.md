@@ -11,14 +11,13 @@
 | MCP en Copilot | https://code.visualstudio.com/docs/copilot/model-context-protocol |
 | Prompt engineering guide | https://docs.github.com/en/copilot/using-github-copilot/prompt-engineering-for-github-copilot |
 
-## OpenCode
+## GitHub Copilot CLI
 
 | Recurso | URL |
 |---|---|
-| Web oficial | https://opencode.ai |
-| Documentación | https://opencode.ai/docs |
-| Repositorio | https://github.com/sst/opencode |
-| Instalación | `npm install -g opencode-ai` |
+| Documentación oficial | https://docs.github.com/en/copilot/github-copilot-in-the-cli |
+| Repositorio | https://github.com/github/gh-copilot |
+| Instalación | `gh extension install github/gh-copilot` |
 
 ## SpecKit
 
@@ -55,8 +54,8 @@
 ## Herramientas mencionadas en la formación
 
 ```powershell
-# OpenCode
-npm install -g opencode-ai
+# GitHub Copilot CLI (extensión gh)
+gh extension install github/gh-copilot
 
 # SpecKit CLI
 uv tool install specify-cli --from git+https://github.com/github/spec-kit.git

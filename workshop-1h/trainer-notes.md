@@ -12,7 +12,14 @@
 | Lab 1 — Ask actualizado | 00:05 – 00:20 | 15 min | Hands-on individual |
 | Lab 2 — Plan mode | 00:20 – 00:35 | 15 min | Hands-on individual |
 | Lab 3 — Agent/Build | 00:35 – 00:50 | 15 min | Hands-on individual |
-| Cierre + cheatsheet | 00:50 – 01:00 | 10 min | Discusión en grupo |
+| Lab 4 — Frontend Angular | 00:50 – 01:05 | 15 min | Hands-on individual |
+| Cierre + cheatsheet | 01:05 – 01:15 | 10 min | Discusión en grupo |
+
+**Labs extra** (si queda tiempo después del cierre o sesión extendida):
+
+| Lab | Duración | Tema |
+|-----|----------|------|
+| Lab 5 | 20–60 min | Copilot Instructions & poder del `.github` |
 
 ---
 
@@ -287,29 +294,83 @@ O instala `curl.exe` real, o usa la extensión REST Client de VS Code con el arc
 
 ---
 
-## Bloque 4: Cierre + Cheatsheet (00:50 – 01:00)
+## Bloque 4: Lab 4 — Frontend Angular (00:50 – 01:05)
+
+### Objetivo del bloque
+Que los participantes apliquen Ask y Agent en un contexto Angular: primero análisis estático de bugs, luego corrección y feature nueva.
+
+### Guion verbal
+
+**00:50** — Lanza el lab con contexto:
+
+> "Cuarto y último lab obligatorio. Cambiamos de stack — salimos del backend .NET y entramos en el frontend Angular. Las herramientas son las mismas, el contexto es diferente."
+
+**00:51** — Instrucción clave antes de empezar:
+
+> "Para este lab necesitáis tener el frontend corriendo. `cd sample-app/frontend/taskmanager-ui` y `ng serve`. Mientras arranca, leed el objetivo del lab."
+
+**00:53** — Ejercicio 1: análisis de bugs con Ask + `#file`.
+
+> "El Ejercicio 1 es solo Ask — no toquéis código todavía. Queremos que Copilot encuentre los 3 bugs antes de que vosotros los veáis. Usad `#file:dashboard.ts` y `#file:task.ts` en el prompt."
+
+**00:57** — Ejercicio 2: corrección con Agent.
+
+> "¿Encontrasteis los 3 bugs? El Ejercicio 2 es corregirlos con Agent de una vez. Leed el prompt sugerido en el lab — tiene restricciones explícitas para que Agent no toque nada más."
+
+**01:02** — Ejercicio 3: feature nueva con Agent.
+
+> "Último ejercicio: activar el botón '+ New Project'. Este es un buen ejemplo de feature nueva desde cero con Agent — leed las restricciones del lab antes de lanzar el prompt."
+
+**01:04** — Wrap-up:
+
+> "Parad. ¿Qué diferencia notáis entre usar Copilot en TypeScript/Angular vs. C#/.NET?"
+
+Respuesta esperada: Copilot funciona igual de bien — el contexto `#codebase` indexa ambos lenguajes. Las restricciones en el prompt son igual de importantes.
+
+### Señales de éxito del Lab 4
+
+- Los 3 bugs identificados en el Ejercicio 1 coinciden con la descripción del lab
+- El badge de estado deja de estar en blanco tras el fix
+- El contador "Open Tasks" deja de mostrar `Infinity`
+- El Ejercicio 3 crea el formulario inline sin añadir Angular Material ni Bootstrap
+
+### Problemas comunes
+
+**"ng serve falla"**
+→ Comprueba que Node.js 20 LTS está instalado (`node --version`) y que se ha ejecutado `npm install` en la carpeta del frontend.
+
+**"Copilot modifica más archivos de los esperados en el Ejercicio 2"**
+→ El prompt del lab tiene restricciones explícitas (`no cambies ningún otro comportamiento`). Si Agent propone cambios fuera de los 3 archivos esperados, cancela y añade esa restricción al prompt.
+
+---
+
+## Bloque 5: Cierre + Cheatsheet (01:05 – 01:15)
 
 ### Objetivo del bloque
 Consolidar el aprendizaje, resolver dudas y dejar a los participantes con un recurso práctico para el día a día.
 
 ### Guion verbal
 
-**00:50** — Abre `cheatsheet.md` en pantalla y dale un minuto al grupo para leerlo.
+**01:05** — Abre `cheatsheet.md` en pantalla y dale un minuto al grupo para leerlo.
 
-**00:51** — Repaso del árbol de decisión:
+**01:06** — Repaso del árbol de decisión:
 
 > "Este árbol es lo que necesitáis saber. Ask para entender, Plan para diseñar, Agent para implementar, selección en el editor para dar contexto rápido sin pegar código. El flujo completo es: Ask → Plan → Agent → Ask de nuevo para los tests."
 
-**00:53** — Preguntas abiertas. Lanza estas si no hay preguntas espontáneas:
+**01:08** — Preguntas abiertas. Lanza estas si no hay preguntas espontáneas:
 
 - "¿Cuál de los tres modos creéis que vais a usar más la semana que viene?"
 - "¿Qué prompt del Lab 1 os ha parecido más útil?"
 
-**00:56** — FAQs rápidas (ver sección siguiente).
+**01:11** — FAQs rápidas (ver sección siguiente).
 
-**00:58** — Frase de cierre (ver al final del documento).
+**01:13** — Si hay tiempo: menciona el Lab 5 extra.
 
-**01:00** — Fin.
+> "Si queréis profundizar, hay un Lab 5 extra en el repositorio sobre cómo configurar Copilot para que siempre respete los estándares de vuestro equipo — y mucho más que puede hacer la carpeta `.github` de vuestros proyectos. Está en `workshop-1h/labs/05-copilot-instructions/`."
+
+**01:14** — Frase de cierre (ver al final del documento).
+
+**01:15** — Fin.
 
 ---
 
@@ -357,3 +418,44 @@ Verifica esto 30 minutos antes:
 - [ ] Pantalla duplicada o compartida lista para demos
 - [ ] `cheatsheet.md` abierto en una pestaña del navegador para el cierre
 - [ ] Pizarra/rotuladores disponibles para los diagramas
+
+---
+
+## Extra Labs — Guion para sesiones ampliadas
+
+Usa esta sección si quedan ≥ 20 minutos después del Bloque 5, o en una sesión separada de seguimiento.
+
+### Lab 5 — Copilot Instructions & el poder del `.github`
+
+**Material**: `labs/05-copilot-instructions/README.md`  
+**Duración**: 20 min (ejercicios básicos) · hasta 60 min (con sección avanzada)
+
+#### Gancho de apertura
+
+> "¿Os ha pasado que Copilot genera código que no sigue vuestros estándares? `DateTime.Now` en lugar de `DateTimeOffset.UtcNow`, propone instalar paquetes que no queréis... Hay una solución que tarda 5 minutos en configurarse y beneficia a todo el equipo. Abrid el Lab 5."
+
+#### Estructura del lab (versión 20 min)
+
+| Parte | Min | Qué hace el formador |
+|-------|-----|----------------------|
+| Motivación | 2 | Demo en vivo: mismo prompt sin/con instrucciones, resultado diferente |
+| Ejercicio 1 | 5 | Camina por la sala, ayuda a copiar la plantilla |
+| Ejercicio 2 | 5 | Para al grupo cuando alguien ve la diferencia — la muestra en pantalla |
+| Más allá (mapa) | 8 | Explica el mapa del `.github` en pantalla, señala lo que ya tienen (PR template) |
+
+#### Estructura del lab (versión 60 min)
+
+Añade el Ejercicio 3 (instrucciones path-specific, 10 min) y profundiza en cada elemento del mapa `.github` con demos en vivo:
+- Activa el `pull_request_template.md` del repo en una demo en GitHub.com
+- Muestra un `CODEOWNERS` real de un proyecto conocido
+- Enseña el workflow de CI (`workflows/ci.yml`) y conecta con el `dotnet build` de copilot-instructions
+
+#### Puntos de debate para el grupo
+
+- "¿Qué reglas de vuestro equipo llevaríais al `copilot-instructions.md`?"
+- "¿Quién debería ser el dueño de este archivo? ¿Uno solo o todo el equipo?"
+- "¿Cómo combinaríais esto con vuestro proceso de code review actual?"
+
+#### Cierre del Lab 5
+
+> "Un solo archivo, commiteado en el repo, que hace que Copilot conozca vuestros estándares, que los PRs tengan siempre la misma estructura, y que los revisores correctos sean asignados automáticamente. El `.github` no es burocracia — es la memoria de vuestro equipo."

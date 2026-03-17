@@ -26,7 +26,18 @@ Desde el taller original han llegado varios cambios que afectan directamente a t
 | Lab 1 | 00:05 – 00:20 | Ask actualizado (`#codebase`, `#file`, selección como contexto) | [labs/01-ask-actualizado/README.md](labs/01-ask-actualizado/README.md) |
 | Lab 2 | 00:20 – 00:35 | Plan mode (planifica primero, luego implementa) | [labs/02-plan-mode/README.md](labs/02-plan-mode/README.md) |
 | Lab 3 | 00:35 – 00:50 | Agent/Build (nuevo endpoint `GET /api/tasks/stats`) | [labs/03-agent-build/README.md](labs/03-agent-build/README.md) |
-| Cierre | 00:50 – 01:00 | Repaso + cheatsheet | [cheatsheet.md](cheatsheet.md) |
+| Lab 4 | 00:50 – 01:05 | Frontend Angular: bugs + feature nueva | [labs/04-frontend/README.md](labs/04-frontend/README.md) |
+| Cierre | 01:05 – 01:15 | Repaso + cheatsheet | [cheatsheet.md](cheatsheet.md) |
+
+> **Duración total**: ~1h 15 min para los 4 labs obligatorios + cierre.
+
+### Labs extra (si queda tiempo)
+
+Si la sesión termina antes o se hace en formato extendido, hay contenido adicional preparado:
+
+| Lab | Duración | Actividad | Material |
+|-----|----------|-----------|----------|
+| Lab 5 | 20–60 min | Copilot Instructions y el poder del `.github` | [labs/05-copilot-instructions/README.md](labs/05-copilot-instructions/README.md) |
 
 ---
 
@@ -38,6 +49,8 @@ Desde el taller original han llegado varios cambios que afectan directamente a t
 | [labs/01-ask-actualizado/README.md](labs/01-ask-actualizado/README.md) | Lab 1: Ask con las nuevas referencias de contexto |
 | [labs/02-plan-mode/README.md](labs/02-plan-mode/README.md) | Lab 2: Plan mode GA — planifica antes de tocar código |
 | [labs/03-agent-build/README.md](labs/03-agent-build/README.md) | Lab 3: Agent construye un endpoint nuevo desde cero |
+| [labs/04-frontend/README.md](labs/04-frontend/README.md) | Lab 4: Angular — bugs + feature nueva con Ask y Agent |
+| [labs/05-copilot-instructions/README.md](labs/05-copilot-instructions/README.md) | Lab 5 *(extra)*: Copilot Instructions y el poder del `.github` |
 | [cheatsheet.md](cheatsheet.md) | Referencia rápida: árbol de decisión, variables, comandos |
 | [trainer-notes.md](trainer-notes.md) | Guion minuto a minuto para el formador |
 
@@ -106,7 +119,11 @@ workshop-1h/
     │   └── README.md
     ├── 02-plan-mode/
     │   └── README.md
-    └── 03-agent-build/
+    ├── 03-agent-build/
+    │   └── README.md
+    ├── 04-frontend/
+    │   └── README.md
+    └── 05-copilot-instructions/ ← lab extra
         └── README.md
 ```
 

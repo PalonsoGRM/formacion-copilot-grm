@@ -133,4 +133,67 @@ Cuando seleccionas código en el editor y abres Copilot Chat, el fragmento selec
 
 ---
 
-[← Lab 3: Agent/Build](labs/03-agent-build/README.md) | [→ Volver al índice](README.md)
+## Copilot Instructions — Enseña tus estándares a Copilot
+
+Crea `.github/copilot-instructions.md` en la raíz de tu proyecto para que Copilot conozca los estándares de tu equipo en todos los IDEs.
+
+### Jerarquía de instrucciones (mayor a menor prioridad)
+
+| Nivel | Archivo / Configuración | Ámbito |
+|-------|------------------------|--------|
+| Personal | Ajustes en github.com | Solo tú |
+| Path-specific | `.github/instructions/*.instructions.md` | Archivos que coincidan con `applyTo` |
+| Repositorio | `.github/copilot-instructions.md` | Todo el repositorio |
+| Organización | Ajustes org en github.com | Toda la organización *(Enterprise, preview)* |
+
+### Qué poner en `copilot-instructions.md`
+
+```markdown
+## Convenciones de código
+- Usa DateTimeOffset.UtcNow, nunca DateTime.Now
+- Devuelve IActionResult en todos los endpoints
+- Sin paquetes NuGet sin confirmar con el desarrollador
+
+## Arquitectura
+- Patrón: Controller → DbContext directo (sin service layer)
+- Build: dotnet build  |  Run: dotnet run
+
+## Reglas para Copilot
+- No elimines el seed data de TaskManagerContext.cs
+- No cambies la firma de endpoints existentes sin confirmar
+```
+
+### Instrucciones por tipo de archivo (path-specific)
+
+```markdown
+---
+applyTo: "**/*.Tests/**/*.cs"
+---
+- Usa xUnit + Moq
+- Formato de nombre: Método_Escenario_ResultadoEsperado
+- Sin dependencias externas (base de datos, red, archivos)
+```
+
+> Copia la plantilla del repo: `docs-templates/.github/copilot-instructions.md`  
+> Docs: https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions
+
+---
+
+## La carpeta `.github` — panel de control del repositorio
+
+```
+.github/
+├── copilot-instructions.md     ← estándares para Copilot (todos los IDEs)
+├── instructions/*.instructions.md  ← reglas por tipo de archivo
+├── workflows/ci.yml            ← CI/CD automático en cada PR
+├── ISSUE_TEMPLATE/             ← formularios estructurados para issues
+├── pull_request_template.md    ← plantilla automática al abrir un PR
+├── CODEOWNERS                  ← revisores automáticos por área del código
+└── SECURITY.md / CONTRIBUTING.md / CODE_OF_CONDUCT.md
+```
+
+> **Repositorio especial `.github`**: créalo en tu organización como fallback para todos los repos que no tengan su propio `.github/`.
+
+---
+
+[← Lab 4: Frontend](labs/04-frontend/README.md) | [← Lab 5: Copilot Instructions](labs/05-copilot-instructions/README.md) | [→ Volver al índice](README.md)

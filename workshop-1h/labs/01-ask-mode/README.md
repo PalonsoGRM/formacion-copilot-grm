@@ -158,6 +158,8 @@ Copilot propondrá añadir validaciones. Revisa la propuesta — **no la aceptes
 
 ---
 
+![Captura de pantalla_18-3-2026_125724_imgflip com](https://github.com/user-attachments/assets/007e41af-69a6-4c0e-b17e-009a4afea2cf)
+
 ## Bonus — `#terminalLastCommand` con error de compilación
 
 Este ejercicio es opcional si sobra tiempo.

@@ -105,10 +105,9 @@ Copilot genera una clase de test con varios casos. **No aceptes los cambios toda
 
 ### Paso 1: pregunta de revisión con `#file`
 
-En Copilot Chat (modo Ask), escribe:
+En Copilot Chat (modo Ask), escribe  #TasksController.cs y a continuación:
 
 ```
-#TasksController.cs
 Actúa como revisor de código senior.
 ¿Qué validaciones de entrada faltan en los endpoints POST y PUT?
 Lista cada problema con: endpoint afectado, campo sin validar, riesgo.

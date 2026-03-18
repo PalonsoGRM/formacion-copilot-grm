@@ -195,6 +195,8 @@ El plan está aprobado. Procede con la implementación.
 
 ## Bonus — Guardar el plan como documento
 
+> **Pro tip:** compartir el plan como Markdown es la diferencia entre una PR con descripción de 3 palabras y una PR que explica el "por qué". El revisor te lo agradecerá. O no, pero al menos no te odiará.
+
 Antes de aprobar la implementación, puedes pedirle a Copilot que exporte el plan:
 
 ```

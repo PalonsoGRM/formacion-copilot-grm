@@ -101,6 +101,9 @@ Agent mostrará los archivos que quiere modificar. Antes de aprobar cada uno, ve
 
 Acepta los cambios propuestos. Si Copilot pide ejecutar comandos en el terminal (como `dotnet build` para verificar), **apruébalos**.
 
+![Captura de pantalla_18-3-2026_13649_imgflip com](https://github.com/user-attachments/assets/d091da00-45b6-476c-9608-a1d3863d1d76)
+
+
 ---
 
 ## Verificación

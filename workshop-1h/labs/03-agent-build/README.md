@@ -76,6 +76,7 @@ Restricciones:
 - No cambies el modelo TaskItem ni la base de datos
 - No crees un nuevo controller si el endpoint encaja en TasksController
 - Usa operaciones asíncronas de EF Core (.CountAsync, .AnyAsync, etc.)
+- Muéstrame los cambios antes de implementarlos para dar mi aprobación.
 ```
 
 ### Paso 2: supervisa los cambios propuestos

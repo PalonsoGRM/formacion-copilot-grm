@@ -1,4 +1,4 @@
-# Lab 1 — Ask Actualizado: `#codebase`, `#file` y selección como contexto
+# Lab 1 — Ask: `#codebase`, `#file` y selección como contexto
 
 **Duración**: 15 minutos  
 **Herramienta**: GitHub Copilot Chat — modo **Ask**  
@@ -56,7 +56,10 @@ Lista los 3 más importantes con el archivo y línea aproximada.
 
 ---
 
+
 ## Ejercicio 2 — Selección como contexto sobre el método `Create` (5 min)
+
+![amxq2l](https://github.com/user-attachments/assets/b5c91bc6-d250-4773-8fd9-a883ddb39944)
 
 ### Paso 1: abre `TasksController.cs`
 

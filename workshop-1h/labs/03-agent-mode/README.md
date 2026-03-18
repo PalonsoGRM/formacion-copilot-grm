@@ -51,6 +51,7 @@ Debe pasar sin errores.
 En Copilot Chat (`Ctrl+Alt+I`), selecciona modo **Agent** en el selector inferior.
 
 ---
+![Captura de pantalla_18-3-2026_13221_imgflip com](https://github.com/user-attachments/assets/74aa4032-626c-4bec-a3cf-6ebd2e91be1a)
 
 ## La tarea
 

@@ -38,13 +38,13 @@ Desde ese mismo icono puedes activar o desactivar las sugerencias inline, pausar
 
 En el selector de modelos del chat verás un multiplicador junto a cada nombre. Este número indica el **coste en "premium requests"** por cada interacción:
 
-| Multiplicador | Significado |
-| :-----------: | ----------- |
-| **0x** | Gratuito — no consume cuota premium. Modelo base rápido, para tareas sencillas. |
-| **1x** | 1 premium request por interacción. Equilibrio velocidad/calidad. |
-| **3x** | 3 premium requests por interacción. Modelos de razonamiento profundo o mayor contexto. |
+| Multiplicador | Significado | Modelos |
+| :-----------: | ----------- |---------|
+| **0x** | Gratuito — no consume cuota premium. Modelo base rápido, para tareas sencillas y documentación. |**GPT-4.1**
+| **1x** | 1 premium request por interacción. Equilibrio velocidad/calidad. |**GPT-codex-5.3**, **Claude Sonnet 4.6**
+| **3x** | 3 premium requests por interacción. Modelos de razonamiento profundo o mayor contexto. | **Claude Opus 4.6**
 
-> En cuentas **Business o Enterprise** (como la vuestra) **no hay límite de premium requests** — el multiplicador es puramente informativo. Usad el modelo que mejor se adapte a la tarea.
+> ¿Qué es una premium request? Una premium request es una interacción con Copilot que consume un crédito mensual de tu suscripción. Los modelos más potentes (razonamiento profundo, mayor contexto) cuestan más créditos por consulta que los modelos estándar.
 
 **Recomendación práctica:**
 

@@ -88,7 +88,7 @@ Agent mostrará los archivos que quiere modificar. Antes de aprobar cada uno, ve
 - [ ] Tiene la anotación `[HttpGet("stats")]`
 - [ ] Usa `_context.Tasks` (el mismo DbContext inyectado)
 - [ ] Las consultas son `async` con `await`
-- [ ] El cálculo de `vencidas` comprueba tanto `DueDate.HasValue` como `DueDate < DateTime.Now` y `Status != "done"`
+- [ ] ❗El cálculo de `vencidas` comprueba tanto `DueDate.HasValue` como `DueDate < DateTime.Now` y `Status != "done"`❗
 - [ ] Devuelve `Ok(new { total, completadas, pendientes, vencidas })`
 
 **No debe crear**:

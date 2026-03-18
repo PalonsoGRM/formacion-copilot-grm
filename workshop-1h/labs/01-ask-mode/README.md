@@ -1,4 +1,4 @@
-# Lab 1 — Ask: `#codebase`, `#file` y selección como contexto
+# Lab 1 — Ask Mode: `#codebase`, `#file` y selección como contexto
 
 **Duración**: 15 minutos  
 **Herramienta**: GitHub Copilot Chat — modo **Ask**  

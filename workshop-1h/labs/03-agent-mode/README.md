@@ -1,4 +1,4 @@
-# Lab 3 — Agent/Build: Nuevo Endpoint `GET /api/tasks/stats`
+# Lab 3 — Agent Mode: Nuevo Endpoint `GET /api/tasks/stats`
 
 **Duración**: 15 minutos  
 **Herramienta**: GitHub Copilot Chat — modo **Agent**  

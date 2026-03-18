@@ -209,7 +209,9 @@ Dame el plan antes de tocar código.
 - ¿Tardaste más o menos?
 
 **Conclusión esperada**: para un endpoint sencillo con patrones claros, Agent directo es suficiente. Para features más complejas o con impacto en varios archivos, Plan mode primero evita sorpresas.
-
 ---
+
+![Captura de pantalla_18-3-2026_131441_imgflip com](https://github.com/user-attachments/assets/1f45e320-3dcc-4944-b315-ed697c5337c6)
+
 
 [← Lab 2: Plan Mode](../02-plan-mode/README.md) | [→ Cheatsheet](../../cheatsheet.md)

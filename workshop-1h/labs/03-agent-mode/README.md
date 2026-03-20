@@ -214,4 +214,4 @@ Dame el plan antes de tocar código.
 ![Captura de pantalla_18-3-2026_131441_imgflip com](https://github.com/user-attachments/assets/1f45e320-3dcc-4944-b315-ed697c5337c6)
 
 
-[← Lab 2: Plan Mode](../02-plan-mode/README.md) | [→ Cheatsheet](../../cheatsheet.md)
+[← Lab 2: Plan Mode](../02-plan-mode/README.md) | [→ Lab 4: Frontend](../04-frontend/README.md)

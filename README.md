@@ -69,3 +69,20 @@ Antes del día de formación, asegurate de que tienes instalado todo lo descrito
 Durante los labs trabajaremos sobre **TaskManager** — una API de gestión de tareas construida con ASP.NET Core + Angular. Tiene varios defectos intencionados que usaremos para practicar cada herramienta.
 
 Ver `sample-app/` para el código fuente.
+
+---
+
+## Guía de contenidos
+
+Sigue este orden durante la sesión:
+
+| Paso | Material | Descripción |
+|------|----------|-------------|
+| 0 | [Pre-requisitos](./PREREQUISITES.md) | Instalación y configuración previa |
+| 1 | [Copilot en el IDE](./copilot-ide-intro/README.md) | Fundamentos: ghost text, modos Ask/Plan/Agent |
+| 2 | [Lab 1 — Ask Mode](./workshop-1h/labs/01-ask-mode/README.md) | `#codebase`, `#file`, selección como contexto |
+| 3 | [Lab 2 — Plan Mode](./workshop-1h/labs/02-plan-mode/README.md) | Planifica antes de tocar código |
+| 4 | [Lab 3 — Agent Mode](./workshop-1h/labs/03-agent-mode/README.md) | Construye un endpoint nuevo desde cero |
+| 5 | [Lab 4 — Frontend](./workshop-1h/labs/04-frontend/README.md) | Bugs y nueva feature en Angular |
+| 6 | [Lab 5 — Copilot Instructions](./workshop-1h/labs/05-copilot-instructions/README.md) | `.github/copilot-instructions.md` y el poder del `.github` |
+| 7 | [Lab 6 — Custom Agents](./workshop-1h/labs/06-custom-agents/README.md) | Tus propios agentes y prompt files |

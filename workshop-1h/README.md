@@ -23,9 +23,9 @@ Desde el taller original han llegado varios cambios que afectan directamente a t
 | Bloque | Hora | Actividad | Material |
 |--------|------|-----------|----------|
 | Novedades | 00:00 – 00:05 | Slides: qué ha cambiado | [slides/00-novedades.md](slides/00-novedades.md) |
-| Lab 1 | 00:05 – 00:20 | Ask actualizado (`#codebase`, `#file`, selección como contexto) | [labs/01-ask-actualizado/README.md](labs/01-ask-actualizado/README.md) |
+| Lab 1 | 00:05 – 00:20 | Ask actualizado (`#codebase`, `#file`, selección como contexto) | [labs/01-ask-mode/README.md](labs/01-ask-mode/README.md) |
 | Lab 2 | 00:20 – 00:35 | Plan mode (planifica primero, luego implementa) | [labs/02-plan-mode/README.md](labs/02-plan-mode/README.md) |
-| Lab 3 | 00:35 – 00:50 | Agent/Build (nuevo endpoint `GET /api/tasks/stats`) | [labs/03-agent-build/README.md](labs/03-agent-build/README.md) |
+| Lab 3 | 00:35 – 00:50 | Agent/Build (nuevo endpoint `GET /api/tasks/stats`) | [labs/03-agent-mode/README.md](labs/03-agent-mode/README.md) |
 | Lab 4 | 00:50 – 01:05 | Frontend Angular: bugs + feature nueva | [labs/04-frontend/README.md](labs/04-frontend/README.md) |
 | Cierre | 01:05 – 01:15 | Repaso + cheatsheet | [cheatsheet.md](cheatsheet.md) |
 
@@ -47,9 +47,9 @@ Si la sesión termina antes o se hace en formato extendido, hay contenido adicio
 | Archivo | Descripción |
 |---------|-------------|
 | [slides/00-novedades.md](slides/00-novedades.md) | Diapositivas: antes/después, variables de contexto, modos |
-| [labs/01-ask-actualizado/README.md](labs/01-ask-actualizado/README.md) | Lab 1: Ask con las nuevas referencias de contexto |
+| [labs/01-ask-mode/README.md](labs/01-ask-mode/README.md) | Lab 1: Ask con las nuevas referencias de contexto |
 | [labs/02-plan-mode/README.md](labs/02-plan-mode/README.md) | Lab 2: Plan mode GA — planifica antes de tocar código |
-| [labs/03-agent-build/README.md](labs/03-agent-build/README.md) | Lab 3: Agent construye un endpoint nuevo desde cero |
+| [labs/03-agent-mode/README.md](labs/03-agent-mode/README.md) | Lab 3: Agent construye un endpoint nuevo desde cero |
 | [labs/04-frontend/README.md](labs/04-frontend/README.md) | Lab 4: Angular — bugs + feature nueva con Ask y Agent |
 | [labs/05-copilot-instructions/README.md](labs/05-copilot-instructions/README.md) | Lab 5 *(extra)*: Copilot Instructions y el poder del `.github` |
 | [labs/06-custom-agents/README.md](labs/06-custom-agents/README.md) | Lab 6 *(extra)*: Custom agents y prompt files — crea tus propios especialistas |

@@ -209,3 +209,7 @@ npm start
 # esté importado en dashboard.ts:
 #   imports: [CommonModule, FormsModule]
 ```
+
+---
+
+[← Lab 3: Agent Mode](../03-agent-mode/README.md) | [→ Lab 5: Copilot Instructions](../05-copilot-instructions/README.md)

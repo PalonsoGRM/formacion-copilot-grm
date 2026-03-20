@@ -201,4 +201,4 @@ Después de ver cómo Copilot explica el error, elimina la línea que añadiste 
 
 ---
 
-[← Novedades](../../slides/00-novedades.md) | [→ Lab 2: Plan Mode](../02-plan-mode/README.md)
+[← Copilot en el IDE](../../../copilot-ide-intro/README.md) | [→ Lab 2: Plan Mode](../02-plan-mode/README.md)

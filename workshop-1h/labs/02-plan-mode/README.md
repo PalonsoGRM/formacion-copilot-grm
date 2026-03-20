@@ -212,4 +212,4 @@ Esto es útil para:
 
 ---
 
-[← Lab 1: Ask Actualizado](../01-ask-actualizado/README.md) | [→ Lab 3: Agent/Build](../03-agent-build/README.md)
+[← Lab 1: Ask Mode](../01-ask-mode/README.md) | [→ Lab 3: Agent Mode](../03-agent-mode/README.md)

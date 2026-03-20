@@ -240,4 +240,4 @@ El selector de **agentes** en el panel de chat es el punto de entrada a los tres
 
 ---
 
-[← README principal](../README.md) | [→ Workshop práctico](../workshop-1h/README.md)
+[← README principal](../README.md) | [→ Lab 1: Ask Mode](../workshop-1h/labs/01-ask-mode/README.md)

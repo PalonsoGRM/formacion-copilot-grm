@@ -204,3 +204,7 @@ GitHub Copilot: Sign In
 ```
 
 Asegúrate de que el modo **Agent** está disponible en el panel de Copilot Chat (icono de agente en el selector de modo, junto al campo de texto).
+
+---
+
+[→ Siguiente: Copilot en el IDE](./copilot-ide-intro/README.md)

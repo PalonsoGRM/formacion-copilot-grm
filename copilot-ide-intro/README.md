@@ -54,11 +54,6 @@ En el selector de modelos del chat verás un multiplicador junto a cada nombre. 
 
 ![Selector de modelos en el panel de chat de VS Code](https://code.visualstudio.com/assets/docs/copilot/chat/copilot-chat/chat-model-picker.png)
 
----
-
-> **One Does Not Simply...** buscar en Stack Overflow 40 minutos cuando tienes `#codebase ¿qué patrón usa este código?`
-
----
 
 ## Bloque 2 — Funcionalidades básicas (15 min)
 

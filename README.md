@@ -55,7 +55,8 @@ FormacionIA/
         ├── 03-agent-build/      # Lab 3: Agent construye endpoint desde cero
         ├── 04-frontend/         # Lab 4: Angular — bugs + feature nueva
         ├── 05-copilot-instructions/ # ⭐ Extra: copilot-instructions.md + poder del .github
-        └── 06-custom-agents/    # ⭐ Extra: agentes y prompt files personalizados
+        ├── 06-custom-agents/    # ⭐ Extra: agentes y prompt files personalizados
+        └── 07-copilot-cli/      # ⭐ Extra: CLI — carpeta vacía → API funcionando sin IDE
 ```
 
 ---
@@ -86,3 +87,4 @@ Sigue este orden durante la sesión:
 | 5 | [Lab 4 — Frontend](./workshop-1h/labs/04-frontend/README.md) | Bugs y nueva feature en Angular |
 | 6 | [Lab 5 — Copilot Instructions](./workshop-1h/labs/05-copilot-instructions/README.md) | `.github/copilot-instructions.md` y el poder del `.github` |
 | 7 | [Lab 6 — Custom Agents](./workshop-1h/labs/06-custom-agents/README.md) | Tus propios agentes y prompt files |
+| 8 | [Lab 7 — Copilot CLI](./workshop-1h/labs/07-copilot-cli/README.md) | Carpeta vacía → API funcionando desde el terminal |

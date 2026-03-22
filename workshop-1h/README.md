@@ -21,6 +21,7 @@
 |-----|----------|
 | Lab 5 — Copilot Instructions y el poder del `.github` | [labs/05-copilot-instructions/README.md](labs/05-copilot-instructions/README.md) |
 | Lab 6 — Custom agents y prompt files | [labs/06-custom-agents/README.md](labs/06-custom-agents/README.md) |
+| Lab 7 — GitHub Copilot CLI: carpeta vacía → API funcionando | [labs/07-copilot-cli/README.md](labs/07-copilot-cli/README.md) |
 
 ---
 

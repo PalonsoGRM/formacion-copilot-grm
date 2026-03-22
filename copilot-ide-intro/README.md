@@ -97,6 +97,7 @@ Typo en una keyword → NES lo detecta y propone la corrección sin que lo pidas
 ![NES corrigiendo un typo "conts" a "const"](https://code.visualstudio.com/assets/docs/copilot/inline-suggestions/nes-typo.png)
 
 > **Activar NES**: `github.copilot.nextEditSuggestions.enabled = true` en Settings.
+<img width="473" height="170" alt="image" src="https://github.com/user-attachments/assets/c2a95b30-7c69-4789-9646-cba5a2fa9f91" />
 
 ---
 

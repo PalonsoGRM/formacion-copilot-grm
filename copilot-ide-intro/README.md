@@ -109,48 +109,36 @@ Ideal para: refactors puntuales, añadir un `try/catch`, cambiar el tipo de reto
 
 ---
 
-### Smart Actions — sin prompt, clic derecho
+### Inline Chat en el terminal — comandos sin memorizar nada
 
-Para las acciones más comunes no necesitas escribir nada. **Clic derecho → menú Copilot:**
+`Ctrl+I` dentro del **terminal integrado** abre un chat inline que genera y explica comandos shell directamente donde los vas a ejecutar.
 
-![Sparkle icon y menú contextual de Copilot para Fix y Explain](https://code.visualstudio.com/assets/docs/copilot/copilot-smart-actions/copilot-code-action-fix.png)
+**Flujo típico:**
 
-| Acción | Cómo acceder |
-| ------ | ------------ |
-| **Explain** | Clic derecho → Copilot → Explain |
-| **Fix** | Clic derecho → Fix, o sparkle ✨ junto a errores de compilación |
-| **Generate Docs** | Clic derecho → Generate Code → Generate Docs |
-| **Generate Tests** | Clic derecho → Generate Code → Generate Tests |
-| **Review** | Clic derecho → Generate Code → Review |
+```
+1. Abre el terminal integrado  (Ctrl+`)
+2. Pulsa Ctrl+I
+3. Escribe en lenguaje natural:
+       "busca todos los archivos .cs que contengan TODO"
+       "comprime la carpeta logs excluyendo los .tmp"
+       "muestra los 10 procesos que más memoria consumen"
+4. Copilot genera el comando → Tab para insertar → Enter para ejecutar
+```
 
-Generar documentación XML directamente desde el clic derecho (reemplaza el antiguo `/doc` del chat):
-
-![Inline chat generando documentación XML para una clase](https://code.visualstudio.com/assets/docs/copilot/copilot-smart-actions/inline-chat-doc-example.png)
-
-Cuando un comando falla en el terminal, aparece un sparkle ✨ en el gutter — clic → explica el error y propone la corrección:
+Cuando un comando **falla**, aparece un sparkle ✨ en el gutter del terminal — un clic explica el error y propone la corrección sin salir del terminal:
 
 ![Sparkle en el terminal tras un comando fallido con la opción Fix with Copilot](https://code.visualstudio.com/assets/docs/copilot/copilot-smart-actions/terminal-command-explanation.png)
 
-Copilot también genera **commit messages** automáticamente basándose en los cambios del staging:
+> **Para qué brilla**: `git log` con filtros complejos, `grep`/`ripgrep` con regex, comandos `dotnet`/`docker` con flags que nunca recuerdas. Sin Stack Overflow, sin salir del IDE.
 
-![Botón de generar commit message en Source Control](https://code.visualstudio.com/assets/docs/copilot/copilot-smart-actions/generate-commit-message.png)
-
----
-
-### El Panel de Chat — interfaz completa
-
-`Ctrl+Alt+I` abre el panel de chat completo. Desde aquí accedes a todas las capacidades: conversación multi-turno, selección de agente y modelo, y contexto explícito con `#`.
-
-![Menú Chat en el Command Center de VS Code](https://code.visualstudio.com/assets/docs/copilot/chat/copilot-chat/copilot-chat-menu-command-center.png)
-
-**Cuatro formas de abrir chat:**
+**Cómo abrir el chat** (referencia rápida):
 
 | Superficie | Atajo | Para qué |
 | ---------- | ----- | -------- |
 | Chat view (panel) | `Ctrl+Alt+I` | Conversaciones largas, agentes, multi-archivo |
-| Inline chat | `Ctrl+I` | Edición inline en el editor |
+| Inline chat (editor) | `Ctrl+I` | Edición inline en el código |
+| **Inline chat (terminal)** | `Ctrl+I` (foco en terminal) | **Generar y corregir comandos shell** |
 | Quick chat | `Ctrl+Shift+Alt+L` | Pregunta rápida sin cambiar de contexto |
-| Terminal chat | `Ctrl+I` (en terminal) | Ayuda con comandos de terminal |
 
 ---
 

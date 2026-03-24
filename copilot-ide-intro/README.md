@@ -21,6 +21,9 @@ GitHub Copilot es un asistente de IA integrado en tu IDE que ayuda a escribir, e
 | **GitHub Mobile** | Chat desde el móvil |
 
 ---
+***ADVERTENCIA***
+---
+<img width="458" height="168" alt="slot" src="https://github.com/user-attachments/assets/91aa6800-791d-4fa3-b378-8a9820c2f364" />
 
 ### La extensión en VS Code
 
@@ -161,7 +164,9 @@ Ver la referencia completa en el [cheatsheet del workshop](../workshop-1h/cheats
 
 ---
 
-> **One Does Not Simply...** pedirle algo a Copilot sin darle contexto. Cuanto más sabe, menos improvisa.
+> Pedirle algo a Copilot sin darle contexto no es recomendable. Cuanto más sabe, menos improvisa.
+> 
+> ![tio ben](https://github.com/user-attachments/assets/5abe5488-6171-411e-bc21-f2f19c08cee6)
 
 ---
 

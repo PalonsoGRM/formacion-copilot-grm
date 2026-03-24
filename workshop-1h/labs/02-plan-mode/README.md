@@ -116,6 +116,7 @@ Ajusta el plan con estas restricciones.
 ---
 
 ## Bonus previo — Exportar el plan como Markdown
+<img width="485" height="398" alt="bob2" src="https://github.com/user-attachments/assets/6bd144f7-1469-4ab2-988d-960a6cd86ce5" />
 
 > **¿Dónde queda mi plan? ¿Lo puedo exportar o documentar?**
 >

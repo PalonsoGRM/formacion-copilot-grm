@@ -34,7 +34,8 @@ Revisas diff de 8 archivos               ↓
 durante 10 minutos                Copilot implementa
                                   exactamente lo acordado
 ```
-![Captura de pantalla_18-3-2026_124154_imgflip com](https://github.com/user-attachments/assets/72aaf89a-5b6e-4df4-92a1-a0b1dffaddff)
+<img width="458" height="570" alt="shaki" src="https://github.com/user-attachments/assets/8422cf25-ac85-48df-a327-9dad0ab70952" />
+
 
 **Plan mode GA** formaliza este flujo. Ya no es un workaround ("dime el plan pero no implementes"). Es un modo con su propio paso de aprobación.
 

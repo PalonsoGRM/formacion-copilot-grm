@@ -115,6 +115,30 @@ Ajusta el plan con estas restricciones.
 
 ---
 
+## Bonus previo — Exportar el plan como Markdown
+
+> **¿Dónde queda mi plan? ¿Lo puedo exportar o documentar?**
+>
+> El plan existe solo en el chat — no se guarda en ningún archivo automáticamente. Si cierras la conversación, lo pierdes. Aquí te explicamos cómo exportarlo antes de seguir.
+
+Antes de aprobar la implementación, puedes exportar el plan a un archivo `.md` para compartirlo o usarlo como descripción de PR.
+
+> **Importante**: Plan mode **no tiene permisos para crear ni modificar archivos**. Solo puede razonar, analizar y generar texto en el chat. Para crear el documento, haz clic en el botón **"Open in Editor"** que aparece en el panel de Plan mode — esto cambia automáticamente a **Agent mode**, que sí tiene permisos de escritura.
+
+Usa este prompt antes de hacer clic en **"Open in Editor"**:
+
+```
+#createFile the plan as is into an untitled file (`untitled:plan-${camelCaseName}.prompt.md` without frontmatter) for further refinement.
+```
+
+Al ejecutarse en Agent mode, el archivo se crea con el contenido del plan, listo para:
+
+- Compartir con el equipo antes de implementar
+- Usarlo como descripción de PR
+- Tener trazabilidad de decisiones de arquitectura
+
+---
+
 ## Ejercicio 2 — Aprobar e iniciar la implementación (5 min)
 
 ### Paso 1: aprueba el plan
@@ -196,20 +220,7 @@ El plan está aprobado. Procede con la implementación.
 
 ## Bonus — Guardar el plan como documento
 
-> **Pro tip:** compartir el plan como Markdown es la diferencia entre una PR con descripción de 3 palabras y una PR que explica el "por qué". El revisor te lo agradecerá. O no, pero al menos no te odiará.
-
-Antes de aprobar la implementación, puedes pedirle a Copilot que exporte el plan:
-
-```
-Guarda este plan en un archivo llamado PLAN-paginacion.md
-en la raíz del proyecto, con formato Markdown y
-una sección de checklist para marcar cada paso.
-```
-
-Esto es útil para:
-- Compartir el diseño con el equipo antes de implementar
-- Usarlo como descripción de PR
-- Tener trazabilidad de decisiones de arquitectura
+> **Pro tip:** consulta el apartado [Bonus previo — Exportar el plan como Markdown](#bonus-previo--exportar-el-plan-como-markdown) para ver cómo hacerlo usando el botón **"Open in Editor"** y el prompt `#createFile`.
 
 ---
 

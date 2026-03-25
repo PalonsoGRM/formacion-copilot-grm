@@ -15,17 +15,17 @@ Si el icono aparece con una X, haz clic en él e inicia sesión con tu cuenta de
 
 ---
 
-## 2. .NET 8 SDK
+## 2. .NET 10 SDK
 
 ```powershell
 dotnet --version
-# Debe mostrar 8.x.x o superior
+# Debe mostrar 10.x.x o superior
 ```
 
 Si no está instalado:
 
 ```powershell
-winget install Microsoft.DotNet.SDK.8
+winget install Microsoft.DotNet.SDK.10
 ```
 
 ---

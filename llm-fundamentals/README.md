@@ -3,6 +3,8 @@
 > **Bloque**: 08:55 – 09:15 · Sesión formativa IA — 23/25 marzo 2026
 > **Objetivo**: entender qué es un LLM, cómo procesa la información y por qué eso importa a la hora de usar GitHub Copilot.
 
+![Fundamentos de IA](assets/image6.jpg)
+
 ---
 
 ## Contenidos
@@ -26,11 +28,11 @@
 
 El mercado de modelos de lenguaje está dominado por tres grandes familias:
 
-| Proveedor | Modelos principales (marzo 2026) |
-|-----------|----------------------------------|
-| **Anthropic** | Claude Opus 4.6 · Claude Sonnet 4.6 · Claude Haiku 4.5 |
-| **OpenAI** | GPT-5.4 · GPT-5.3-Codex · GPT-4.1 |
-| **Google** | Gemini 3.1 Pro · Gemini 3.1 Flash |
+| Proveedor | Logo | Modelos principales (marzo 2026) |
+|-----------|------|----------------------------------|
+| **Anthropic** | ![Claude](assets/image7.png) | Claude Opus 4.6 · Claude Sonnet 4.6 · Claude Haiku 4.5 |
+| **OpenAI** | ![OpenAI Codex](assets/image8.png) | GPT-5.4 · GPT-5.3-Codex · GPT-4.1 |
+| **Google** | ![Gemini](assets/image9.png) | Gemini 3.1 Pro · Gemini 3.1 Flash |
 
 Todos estos modelos son accesibles desde GitHub Copilot Empresarial, con distintos multiplicadores de coste (ver [sección 06](#06--modelos-disponibles-en-copilot)).
 
@@ -42,12 +44,16 @@ Los asistentes IA están integrados de forma nativa en los entornos de desarroll
 - Soporte para Ask, Plan y Agent mode
 - Contexto del proyecto cargado automáticamente
 
+![GitHub Copilot en VS Code — Agent mode](assets/image16.png)
+
 ### IA en el CLI
 
 La IA también vive fuera del IDE:
 
 - **GitHub Copilot CLI** — traduce lenguaje natural a comandos shell, explica errores, ejecuta desde terminal
 - Útil para equipos que trabajan con pipelines, scripts o entornos sin interfaz gráfica
+
+![GitHub Copilot CLI en terminal PowerShell](assets/image18.png)
 
 ---
 
@@ -86,6 +92,8 @@ Gracias a esa capacidad de predecir y estructurar ideas, los LLM pueden:
 
 Un **token** es la unidad mínima de texto que un LLM procesa. No es una palabra completa, sino un fragmento — sílaba o subpalabra — en el que el modelo descompone el lenguaje para operar matemáticamente sobre él.
 
+![Diagrama de tokenización](assets/image20.png)
+
 ### 3 datos clave
 
 1. **No siempre es una palabra**: un token puede ser una palabra entera, una sílaba, un solo carácter o incluso un espacio en blanco.
@@ -95,6 +103,8 @@ Un **token** es la unidad mínima de texto que un LLM procesa. No es una palabra
 3. **Es la "moneda" de la IA**: cuando usas herramientas como ChatGPT o Copilot, los límites de memoria (cuánto recuerda de la charla) y el coste del servicio se miden por cuántos tokens se procesan.
 
 > **Recurso**: [GPT Tokenizer Playground](https://platform.openai.com/tokenizer) — pega cualquier texto y ve exactamente cómo lo divide el modelo en tokens.
+
+![GPT Tokenizer Playground](assets/image21.png)
 
 ---
 
@@ -112,6 +122,10 @@ Un prompt puede ser un comentario de código, el nombre de una función que acab
 >
 > - Si el prompt es **vago**: "Escríbeme algo" → el genio te dará algo genérico que quizá no te sirva.
 > - Si el prompt es **específico**: "Escríbeme un cuento corto sobre un gato astronauta, en tono divertido y para un niño de 5 años" → el genio te dará exactamente lo que buscas.
+
+| Prompt vago | Prompt específico |
+|-------------|-------------------|
+| ![Ejemplo de mal prompt](assets/image22.png) | ![Ejemplo de buen prompt](assets/image23.png) |
 
 ### Consejos básicos de prompting
 
@@ -227,6 +241,8 @@ El multiplicador indica el **coste en "premium requests"** por cada interacción
 - **0x** — Uso ilimitado, incluido en la suscripción base. Para tareas sencillas y documentación.
 - **1x** — 1 premium request por interacción. Equilibrio velocidad/calidad.
 - **3x** — 3 premium requests por interacción. Modelos de razonamiento profundo o mayor contexto.
+
+![Selector de modelos en GitHub Copilot](assets/image24.png)
 
 ### GitHub Copilot Empresarial (Corporate)
 

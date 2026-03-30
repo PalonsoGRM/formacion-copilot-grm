@@ -40,6 +40,8 @@ FormacionIA/
 │   │   └── tester.agent.md      # Especialista en tests xUnit + Moq
 │   └── prompts/                 # 💬 Prompt files / slash commands (Lab 06)
 │       └── nuevo-endpoint.prompt.md # /nuevo-endpoint — scaffold de endpoint
+├── llm-fundamentals/            # Fundamentos de IA: LLM, tokens, prompts, context window, modelos
+│   └── README.md                # Contenido del bloque "Fundamentos de IA" (20 min, Derek)
 ├── sample-app/
 │   ├── backend/                 # ASP.NET Core Web API — Task Manager (con defectos intencionados)
 │   └── frontend/                # Angular app — Task Manager UI
@@ -80,11 +82,12 @@ Sigue este orden durante la sesión:
 | Paso | Material | Descripción |
 |------|----------|-------------|
 | 0 | [Pre-requisitos](./PREREQUISITES.md) | Instalación y configuración previa |
-| 1 | [Copilot en el IDE](./copilot-ide-intro/README.md) | Fundamentos: ghost text, modos Ask/Plan/Agent |
-| 2 | [Lab 1 — Ask Mode](./workshop-1h/labs/01-ask-mode/README.md) | `#codebase`, `#file`, selección como contexto |
-| 3 | [Lab 2 — Plan Mode](./workshop-1h/labs/02-plan-mode/README.md) | Planifica antes de tocar código |
-| 4 | [Lab 3 — Agent Mode](./workshop-1h/labs/03-agent-mode/README.md) | Construye un endpoint nuevo desde cero |
-| 5 | [Lab 4 — Frontend](./workshop-1h/labs/04-frontend/README.md) | Bugs y nueva feature en Angular |
-| 6 | [Lab 5 — Copilot Instructions](./workshop-1h/labs/05-copilot-instructions/README.md) | `.github/copilot-instructions.md` y el poder del `.github` |
-| 7 | [Lab 6 — Custom Agents](./workshop-1h/labs/06-custom-agents/README.md) | Tus propios agentes y prompt files |
-| 8 | [Lab 7 — Copilot CLI](./workshop-1h/labs/07-copilot-cli/README.md) | Carpeta vacía → API funcionando desde el terminal |
+| 1 | [Fundamentos de IA](./llm-fundamentals/README.md) | LLM, tokens, prompts, context window, system prompt, modelos |
+| 2 | [Copilot en el IDE](./copilot-ide-intro/README.md) | Fundamentos: ghost text, modos Ask/Plan/Agent |
+| 3 | [Lab 1 — Ask Mode](./workshop-1h/labs/01-ask-mode/README.md) | `#codebase`, `#file`, selección como contexto |
+| 4 | [Lab 2 — Plan Mode](./workshop-1h/labs/02-plan-mode/README.md) | Planifica antes de tocar código |
+| 5 | [Lab 3 — Agent Mode](./workshop-1h/labs/03-agent-mode/README.md) | Construye un endpoint nuevo desde cero |
+| 6 | [Lab 4 — Frontend](./workshop-1h/labs/04-frontend/README.md) | Bugs y nueva feature en Angular |
+| 7 | [Lab 5 — Copilot Instructions](./workshop-1h/labs/05-copilot-instructions/README.md) | `.github/copilot-instructions.md` y el poder del `.github` |
+| 8 | [Lab 6 — Custom Agents](./workshop-1h/labs/06-custom-agents/README.md) | Tus propios agentes y prompt files |
+| 9 | [Lab 7 — Copilot CLI](./workshop-1h/labs/07-copilot-cli/README.md) | Carpeta vacía → API funcionando desde el terminal |
